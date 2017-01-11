@@ -1,0 +1,5 @@
+<StackLayout class="p-20">
+    <Label text="Tap the button" class="h1 text-center"></Label>
+    <ActivityIndicator [busy]="isLoading" width="50" height="50" [visibility]="isLoading ? 'visible' : 'collapse'" color="red"></ActivityIndicator>
+    <Button text="TAP" (tap)="onTap()" class="btn btn-primary btn-active"></Button>
+</StackLayout>
